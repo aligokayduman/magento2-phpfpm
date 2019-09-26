@@ -19,8 +19,8 @@ RUN apt install -y libcurl4-openssl-dev \
                    libc-client-dev \
                    libkrb5-dev \
     && rm -r /var/lib/apt/lists/* \               
-    && pecl install redis-4.0.1 \
-    && pecl install xdebug-2.6.0 \
+    && pecl install redis-5.0.2 \
+    && pecl install xdebug-2.7.2 \
     && docker-php-ext-enable redis xdebug \
     && docker-php-ext-install -j$(nproc) iconv \
     && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
