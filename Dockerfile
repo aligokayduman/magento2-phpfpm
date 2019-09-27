@@ -3,9 +3,7 @@ FROM php:7.2.11-fpm
 MAINTAINER A. Gökay Duman <smyrnof@gmail.com>
 
 # General Commands
-RUN apt update \ 
-    && apt upgrade -y \
-    && apt install -y apt-utils dos2unix
+RUN apt update 
 
 # Php-Fpm Install
 RUN apt install -y libcurl4-openssl-dev \
@@ -35,7 +33,6 @@ RUN apt install -y libcurl4-openssl-dev \
                               pdo_mysql \
                               curl \                           
                               mbstring \
-                              mcrypt \
                               hash \
                               simplexml \
                               soap \
