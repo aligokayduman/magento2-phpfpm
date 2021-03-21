@@ -18,6 +18,7 @@ RUN apt install -y libcurl4-openssl-dev \
                    libkrb5-dev \
                    libzip-dev \
                    zip \
+                   libsodium-dev \
     && rm -r /var/lib/apt/lists/* \               
     && pecl install redis-5.0.2 \
     && pecl install xdebug-2.7.2 \
@@ -41,7 +42,8 @@ RUN apt install -y libcurl4-openssl-dev \
                               xml \
                               xsl \
                               zip \
-                              json
+                              json \
+                              sodium
                               
 RUN useradd docker-usr \
     && usermod -aG www-data docker-usr \
