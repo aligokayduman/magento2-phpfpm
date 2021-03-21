@@ -16,6 +16,8 @@ RUN apt install -y libcurl4-openssl-dev \
                    libxslt-dev \
                    libc-client-dev \
                    libkrb5-dev \
+                   libzip-dev \
+                   zip \
     && rm -r /var/lib/apt/lists/* \               
     && pecl install redis-5.0.2 \
     && pecl install xdebug-2.7.2 \
