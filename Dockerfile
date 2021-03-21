@@ -1,4 +1,4 @@
-FROM php:7.4-fpm
+FROM php:7-fpm
 
 MAINTAINER A. Gökay Duman <smyrnof@gmail.com>
 
