@@ -43,7 +43,8 @@ RUN apt install -y libcurl4-openssl-dev \
                               xsl \
                               zip \
                               json \
-                              sodium
+                              sodium \
+                              sockets
                               
 RUN useradd docker-usr \
     && usermod -aG www-data docker-usr \
